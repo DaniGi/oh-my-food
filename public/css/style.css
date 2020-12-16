@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.header {
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+}
+.header h1 {
+  height: 100%;
+}
+.header img {
+  vertical-align: bottom;
+}
+
+.location {
+  background-color: #eee;
+  box-shadow: inset 0 3px 1px rgba(182, 182, 182, 0.75);
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location i {
+  margin: 0 2rem 0 -3rem;
+  font-size: 1.7rem;
+  padding-bottom: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

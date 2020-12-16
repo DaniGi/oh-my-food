@@ -1,0 +1,13 @@
+.location {
+  background-color: $bg-color;
+  box-shadow: inset 0 3px 1px rgba(182, 182, 182, 0.75);
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & i {
+    margin: 0 2rem 0 -3rem;
+    font-size: 1.7rem;
+    padding-bottom: 3px;
+  }
+}

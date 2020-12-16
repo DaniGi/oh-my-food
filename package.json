@@ -1,0 +1,19 @@
+{
+  "name": "danielegioria_3_03122020",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniGi/DanieleGioria_3_03122020.git"
+  },
+  "author": "Daniele Gioria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniGi/DanieleGioria_3_03122020/issues"
+  },
+  "homepage": "https://github.com/DaniGi/DanieleGioria_3_03122020#readme"
+}
