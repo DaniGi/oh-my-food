@@ -33,10 +33,7 @@
 .funct {
   margin: 4rem 2rem;
   & li {
-    @include shadow;
-    position: relative;
-    background-color: $bg-color-secondary;
-    border-radius: 2rem;
+    @include list-item;
     padding: 3rem;
     margin: 2rem 0rem 2rem 1.5rem;
   }
@@ -68,11 +65,8 @@
     border-radius: 2rem;
     margin: 2rem 0;
     & img {
-      object-fit: cover;
-      object-position: bottom;
-      min-height: 0;
+      @include img;
       height: 20rem;
-      width: 100%;
       border-radius: 2rem 2rem 0 0;
     }
     &__body {
@@ -89,11 +83,9 @@
     border-radius: 0.5rem;
     font-weight: 500;
   }
-  & i {
-    position: absolute;
+  & .fa-heart {
+    @include heart;
     right: 3rem;
     bottom: 3rem;
-    font-size: 3rem;
-    color: darken($bg-color-primary, 20);
   }
 }

@@ -1,4 +1,4 @@
-@mixin shadow() {
+@mixin shadow {
   box-shadow: 0px 4px 4px $bg-color-primary;
 }
 
@@ -11,4 +11,24 @@
   text-align: center;
   padding: 2rem;
   width: 250px;
+}
+
+@mixin img {
+  object-fit: cover;
+  object-position: bottom;
+  min-height: 0;
+  width: 100%;
+}
+
+@mixin heart {
+  position: absolute;
+  font-size: 3rem;
+  color: darken($bg-color-primary, 20);
+}
+
+@mixin list-item($color: $bg-color-secondary) {
+  @include shadow;
+  position: relative;
+  background-color: $color;
+  border-radius: 2rem;
 }
