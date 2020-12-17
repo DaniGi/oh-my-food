@@ -1,0 +1,23 @@
+.footer {
+  color: white;
+  background-color: darken($bg-color-primary, 70);
+  padding: 2.5rem 2rem;
+  & img {
+    fill: white;
+  }
+  & ul {
+    margin-top: 1rem;
+  }
+  & li {
+    line-height: 1.5;
+  }
+  & i {
+    margin-right: 0.5rem;
+  }
+  & .fa-utensils {
+    font-size: 1.5rem;
+  }
+  & .fa-hands-helping {
+    font-size: 1rem;
+  }
+}
