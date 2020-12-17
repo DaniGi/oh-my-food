@@ -1,5 +1,5 @@
 .location {
-  background-color: $bg-color;
+  background-color: $bg-color-primary;
   box-shadow: inset 0 3px 1px rgba(182, 182, 182, 0.75);
   height: 5.5rem;
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .explore {
-  background-color: lighten($bg-color, 8);
+  background-color: $bg-color-secondary;
   padding: 4.5rem 0 6.5rem 0;
   display: flex;
   flex-direction: column;
@@ -28,25 +28,17 @@
     text-align: center;
     padding: 1rem 0 3rem 0;
   }
-  & button {
-    color: white;
-    background: linear-gradient(354deg,$color-primary 1%, $color-secondary 100%);
-    border: 0;
-    border-radius: 3rem;
-    text-align: center;
-    padding: 2rem;
-    width: 250px;
-  }
 }
 
 .funct {
-  padding: 4rem 2rem;
+  margin: 4rem 2rem;
   & li {
+    @include shadow;
     position: relative;
-    background-color: lighten($bg-color, 8);
+    background-color: $bg-color-secondary;
     border-radius: 2rem;
     padding: 3rem;
-    margin: 2rem 1.5rem
+    margin: 2rem 0rem 2rem 1.5rem;
   }
   & span {
     position: absolute;
@@ -56,13 +48,52 @@
     color: white;
     background-color: $color-primary;
     border-radius: 50%;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.9rem;
   }
   & i {
-    color: darken($bg-color, 35);
+    color: darken($bg-color-primary, 35);
     margin: 0 2rem 0 1rem;
   }
   & .fa-mobile-alt {
     font-size: 2rem;
+  }
+}
+
+.resto {
+  padding: 4rem 2rem;
+  background-color: $bg-color-secondary;
+  &-card{
+    @include shadow;
+    position: relative;
+    border-radius: 2rem;
+    margin: 2rem 0;
+    & img {
+      object-fit: cover;
+      object-position: bottom;
+      min-height: 0;
+      height: 20rem;
+      width: 100%;
+      border-radius: 2rem 2rem 0 0;
+    }
+    &__body {
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+  }
+  & span {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: $bg-color-tertiary;
+    color: darken($bg-color-tertiary, 50);
+    border-radius: 0.5rem;
+    font-weight: 500;
+  }
+  & i {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    font-size: 3rem;
+    color: darken($bg-color-primary, 20);
   }
 }

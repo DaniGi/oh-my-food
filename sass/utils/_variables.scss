@@ -2,7 +2,9 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$bg-color: rgb(226, 226, 226);
+$bg-color-primary: rgb(226, 226, 226);
+$bg-color-secondary: lighten($bg-color-primary, 7);
+$bg-color-tertiary: aquamarine;
 
 $font-logo-titles: '../fonts/Shrikhand/Shrikhand-Regular.ttf';
 $font-text: '../fonts/Roboto/Roboto-Regular.ttf';

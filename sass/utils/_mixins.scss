@@ -1,0 +1,14 @@
+@mixin shadow() {
+  box-shadow: 0px 4px 4px $bg-color-primary;
+}
+
+@mixin btn {
+  @include shadow;
+  color: white;
+  background: linear-gradient(354deg, $color-primary 1%, $color-secondary 100%);
+  border: 0;
+  border-radius: 3rem;
+  text-align: center;
+  padding: 2rem;
+  width: 250px;
+}
