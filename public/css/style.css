@@ -15,6 +15,10 @@ body {
   min-width: 320px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -25,7 +29,7 @@ h1 {
   font-weight: 700;
 }
 
-h3 {
+h3, li {
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -66,7 +70,7 @@ p {
 
 .explore {
   background-color: #f6f6f6;
-  padding: 4rem 0;
+  padding: 4.5rem 0 6.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,12 +87,40 @@ p {
 }
 .explore button {
   color: white;
-  background: linear-gradient(354deg, #9356DC 26%, #FF79DA 100%);
+  background: linear-gradient(354deg, #9356DC 1%, #FF79DA 100%);
   border: 0;
   border-radius: 3rem;
   text-align: center;
   padding: 2rem;
   width: 250px;
+}
+
+.funct {
+  padding: 4rem 2rem;
+}
+.funct li {
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 3rem;
+  margin: 2rem 1.5rem;
+}
+.funct span {
+  position: absolute;
+  left: -3.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 0.4rem 1rem;
+}
+.funct i {
+  color: #898989;
+  margin: 0 2rem 0 1rem;
+}
+.funct .fa-mobile-alt {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
