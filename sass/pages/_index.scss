@@ -84,7 +84,6 @@
     font-weight: 500;
   }
   & .fa-heart {
-    @include heart;
     right: 3rem;
     bottom: 3rem;
   }
