@@ -1,6 +1,6 @@
 .footer {
   color: white;
-  background-color: darken($bg-color-primary, 70);
+  background-color: $bg-color-dark;
   padding: 2.5rem 2rem;
   & img {
     fill: white;
