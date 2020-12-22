@@ -4,13 +4,13 @@
     height: 32rem;
   }
   &-list {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: -6rem;
+    padding: 4rem 2rem;
     background-color: $bg-color-secondary;
     border-radius: 4rem 4rem 0 0;
-    padding: 4rem 2rem;
-    position: relative;
     & .fa-heart {
       top: 4rem;
       right: 4rem;
@@ -18,63 +18,63 @@
   }
   &-section {
     margin-top: 3rem;
-    & li {
+    &__item {
       @include list-item(white);
-      overflow: hidden;
       display: flex;
       justify-content: space-between;
       margin: 2rem 0;
+      overflow: hidden;
       &:hover {
-        & .menu-section__check {
+        & .menu-check {
           width: 7rem;
-        }
-        & i {
-          transform: translate(-50%, -50%) rotate(720deg);
+          &__icon {
+            transform: translate(-50%, -50%) rotate(720deg);
+          }
         }
       } 
     }
-    & .price {
-      height: max-content;
-      align-self: end;
-      padding: 0 1rem 1rem 0;
-      font-size: 1.8rem;
-    }
-    & p {
-      @include ellipsis;
-    }
-    & h2 {
-      @include ellipsis;
-    }
-    & > p {
-      border-bottom: 3px solid $color-tertiary;
+    &__name {
       width: 5rem;
-      padding-bottom: 0.5rem 
-    }
-    &__dish {
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      margin-right: auto;
-      flex: 1;
-      min-width: 0;
-    }
-    &__check {
-      position: relative;
-      background: $bg-color-tertiary;
-      width: 0;
-      transition: width 700ms;
-      & > i {
-        position: absolute;
-        transform: translate(-50%, -50%) rotate(0deg);
-        transition: transform 700ms;
-        top: 50%;
-        left: 50%;
-        font-size: 2.5rem;
-        color: white;
-      }
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid $color-tertiary;
     }
   }
-  & .btn {
+  &-check {
+    position: relative;
+    background: $bg-color-tertiary;
+    width: 0;
+    transition: width $check-transition-time;
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2.5rem;
+      color: white;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: transform $check-transition-time;
+    }
+  }
+  &-dish {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-right: auto;
+    min-width: 0;
+    &__description {
+      @include ellipsis;
+    }
+    &__name {
+      @include ellipsis;
+    }
+    &__price {
+      align-self: end;
+      padding: 0 1rem 1rem 0;
+      height: max-content;
+      font-size: 1.8rem;
+    }
+  }
+  &-btn {
     align-self: center;
     margin: 3rem;
   }
