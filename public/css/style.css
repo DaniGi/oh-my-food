@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  min-width: 320px;
+  min-width: 340px;
 }
 
 ul {
@@ -285,23 +285,20 @@ footer li {
   justify-content: space-between;
   margin: 2rem 0;
 }
-.menu-section li:hover > span {
-  transform: translateX(0);
-}
-.menu-section li:hover > .menu-section__check {
-  transform: scaleX(1);
+.menu-section li:hover .menu-section__check {
+  width: 60px;
 }
 .menu-section li:hover i {
-  transform: translate(-50%, -50%) rotate(360deg);
-  transition: transform 700ms;
+  transform: translate(-50%, -50%) rotate(720deg);
 }
 .menu-section .price {
   height: max-content;
   align-self: end;
   padding: 0 1rem 1rem 0;
   font-size: 1.8rem;
-  transform: translateX(140%);
-  transition: transform 700ms;
+}
+.menu-section p {
+  display: inline;
 }
 .menu-section > p {
   border-bottom: 3px solid #99E2D0;
@@ -312,10 +309,7 @@ footer li {
   padding: 1rem;
   margin-right: auto;
   flex: 1;
-  overflow: hidden;
   min-width: 0;
-}
-.menu-section__dish .wrapper {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -324,12 +318,13 @@ footer li {
   position: relative;
   width: 7rem;
   background: #99E2D0;
-  transform: scaleX(0);
-  transition: transform 700ms;
+  width: 0;
+  transition: width 700ms;
 }
 .menu-section__check > i {
   position: absolute;
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(130%, -50%) rotate(0deg);
+  transition: transform 700ms;
   top: 50%;
   left: 50%;
   font-size: 2.5rem;
