@@ -46,3 +46,10 @@
   background-color: $color;
   border-radius: 2rem;
 }
+
+@mixin ellipsis {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
