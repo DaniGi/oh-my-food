@@ -1,0 +1,9 @@
+@keyframes items {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -24,6 +24,12 @@
       justify-content: space-between;
       margin: 2rem 0;
       overflow: hidden;
+      animation: items $item-anim-dur backwards ease-out;
+      @for $i from 1 through $num-items {
+        &--#{$i} {
+            animation-delay: $item-anim-delay + ($item-anim-delay/2 * $i);
+          }
+      }
       &:hover {
         & .menu-check {
           width: 7rem;
@@ -43,7 +49,7 @@
     position: relative;
     background: $bg-color-tertiary;
     width: 0;
-    transition: width $check-transition-time;
+    transition: width $check-transition-dur;
     &__icon {
       position: absolute;
       top: 50%;
@@ -51,7 +57,7 @@
       font-size: 2.5rem;
       color: white;
       transform: translate(-50%, -50%) rotate(0deg);
-      transition: transform $check-transition-time;
+      transition: transform $check-transition-dur;
     }
   }
   &-dish {
@@ -68,7 +74,7 @@
       @include ellipsis;
     }
     &__price {
-      align-self: end;
+      align-self: flex-end;
       padding: 0 1rem 1rem 0;
       height: max-content;
       font-size: 1.8rem;
