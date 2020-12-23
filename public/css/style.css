@@ -304,6 +304,9 @@ footer li {
 .menu-section__item--3 {
   animation-delay: 625ms;
 }
+.menu-section__item--4 {
+  animation-delay: 750ms;
+}
 .menu-section__item:hover .menu-check {
   width: 7rem;
 }
