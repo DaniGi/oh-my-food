@@ -172,7 +172,7 @@ footer li {
   justify-content: center;
   align-items: center;
 }
-.location i {
+.location__icon {
   margin: 0 2rem 0 -3rem;
   font-size: 1.7rem;
   padding-bottom: 3px;
@@ -199,7 +199,7 @@ footer li {
 .funct {
   margin: 4rem 2rem;
 }
-.funct li {
+.funct-item {
   box-shadow: 0px 4px 4px #e2e2e2;
   position: relative;
   background-color: #f4f4f4;
@@ -207,9 +207,9 @@ footer li {
   padding: 3rem;
   margin: 2rem 0rem 2rem 1.5rem;
 }
-.funct span {
+.funct-item__num {
   position: absolute;
-  left: -3.5%;
+  left: -1.5rem;
   top: 50%;
   transform: translate(0, -50%);
   color: white;
@@ -217,7 +217,7 @@ footer li {
   border-radius: 50%;
   padding: 0.4rem 0.9rem;
 }
-.funct i {
+.funct-item__icon {
   color: #898989;
   margin: 0 2rem 0 1rem;
 }
@@ -236,7 +236,7 @@ footer li {
   border-radius: 2rem;
   margin: 2rem 0;
 }
-.resto-card img {
+.resto-card__img {
   object-fit: cover;
   object-position: bottom;
   min-height: 0;
@@ -246,7 +246,7 @@ footer li {
 .resto-card__body {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
-.resto span {
+.resto-card__new {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
