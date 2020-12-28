@@ -1,5 +1,5 @@
 .menu {
-  & img {
+  &__img {
     @include img;
     height: 32rem;
   }
@@ -11,6 +11,11 @@
     padding: 4rem 2rem;
     background-color: $bg-color-secondary;
     border-radius: 4rem 4rem 0 0;
+    @media (min-width: $mobile-breakpoint) {
+      max-width: $mobile-breakpoint;
+      margin-left: auto;
+      margin-right: auto; 
+    }
     & .fa-heart {
       top: 4rem;
       right: 4rem;

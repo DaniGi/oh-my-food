@@ -41,9 +41,9 @@
     @include list-item;
     padding: 3rem;
     margin: 2rem 0rem 2rem 1.5rem;
-    min-width: 32rem;
+    min-width: $funct-item-width;
     @media (min-width: $mobile-breakpoint) {
-      width: 32rem;
+      width: $funct-item-width;
       margin: 2rem auto;
     }
     &__num {

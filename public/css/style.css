@@ -291,7 +291,7 @@ footer li {
   bottom: 3rem;
 }
 
-.menu img {
+.menu__img {
   object-fit: cover;
   object-position: bottom;
   min-height: 0;
@@ -306,6 +306,13 @@ footer li {
   padding: 4rem 2rem;
   background-color: #f4f4f4;
   border-radius: 4rem 4rem 0 0;
+}
+@media (min-width: 600px) {
+  .menu-list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .menu-list .fa-heart {
   top: 4rem;
