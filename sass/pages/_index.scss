@@ -7,7 +7,6 @@
   align-items: center;
   &__icon {
     margin: 0 2rem 0 -3rem;
-    font-size: 1.7rem;
     padding-bottom: 3px;
   }
 }
@@ -61,9 +60,6 @@
       margin: 0 2rem 0 1rem;
     }
   }
-  & .fa-mobile-alt {
-    font-size: 2rem;
-  }
 }
 
 .resto {
@@ -106,7 +102,6 @@
       background-color: $bg-color-tertiary;
       color: darken($bg-color-tertiary, 50);
       border-radius: 0.5rem;
-      font-weight: 500;
     }
   }
   & .fa-heart {

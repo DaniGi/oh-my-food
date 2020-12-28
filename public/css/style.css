@@ -49,14 +49,44 @@ span {
   font-size: 1.5rem;
 }
 
-footer h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 2rem;
-  font-weight: lighter;
-  line-height: 1.5;
+.fs-2_8 {
+  font-size: 2.8rem;
 }
-footer li {
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-1_9 {
+  font-size: 1.9rem;
+}
+
+.fs-1_8 {
+  font-size: 1.8rem;
+}
+
+.fs-1_7 {
+  font-size: 1.7rem;
+}
+
+.fs-1_5 {
+  font-size: 1.5rem;
+}
+
+.fw-400 {
   font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 @keyframes items {
@@ -145,13 +175,14 @@ footer li {
   background-color: #303030;
   padding: 2.5rem 2rem;
 }
-.footer img {
-  fill: white;
+.footer-title {
+  font-family: "Shrikhand", sans-serif;
+  line-height: 1.5;
 }
-.footer ul {
+.footer-list {
   margin-top: 1rem;
 }
-.footer li {
+.footer-list__item {
   line-height: 1.5;
 }
 .footer i {
@@ -174,7 +205,6 @@ footer li {
 }
 .location__icon {
   margin: 0 2rem 0 -3rem;
-  font-size: 1.7rem;
   padding-bottom: 3px;
 }
 
@@ -233,9 +263,6 @@ footer li {
   color: #898989;
   margin: 0 2rem 0 1rem;
 }
-.funct .fa-mobile-alt {
-  font-size: 2rem;
-}
 
 .resto {
   padding: 4rem 2rem;
@@ -284,7 +311,6 @@ footer li {
   background-color: #99E2D0;
   color: #1b6150;
   border-radius: 0.5rem;
-  font-weight: 500;
 }
 .resto .fa-heart {
   right: 3rem;
@@ -394,7 +420,6 @@ footer li {
   align-self: flex-end;
   padding: 0 1rem 1rem 0;
   height: max-content;
-  font-size: 1.8rem;
 }
 .menu-btn {
   align-self: center;

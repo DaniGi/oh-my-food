@@ -1,0 +1,23 @@
+$fontSizes: (
+    "2_8": 2.8rem,
+    "2": 2rem,
+    "1_9": 1.9rem,
+    "1_8": 1.8rem,
+    "1_7": 1.7rem,
+    "1_5": 1.5rem,
+);
+
+@each $fontSize, $size in $fontSizes {
+  .fs-#{$fontSize} {
+    font-size: $size;
+  }	
+}
+
+$fontWeight: 400;
+
+@while $fontWeight <= 700 {
+  .fw-#{$fontWeight} {
+    font-weight: $fontWeight;
+  }
+  $fontWeight: $fontWeight + 100;
+}

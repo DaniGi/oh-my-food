@@ -2,14 +2,15 @@
   color: white;
   background-color: $bg-color-dark;
   padding: 2.5rem 2rem;
-  & img {
-    fill: white;
-  }
-  & ul {
-    margin-top: 1rem;
-  }
-  & li {
+  &-title {
+    font-family: 'Shrikhand', sans-serif;
     line-height: 1.5;
+  }
+  &-list {
+    margin-top: 1rem;
+    &__item {
+      line-height: 1.5;
+    }
   }
   & i {
     margin-right: 0.5rem;
