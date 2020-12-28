@@ -16,9 +16,12 @@
       margin-left: auto;
       margin-right: auto; 
     }
-    & .fa-heart {
-      top: 4rem;
-      right: 4rem;
+    &__title {
+      font-family: 'Shrikhand', sans-serif;
+    }
+    &__icon {
+      top: 4.5rem;
+      margin-left: 1rem; 
     }
   }
   &-section {
@@ -80,7 +83,7 @@
     }
     &__price {
       align-self: flex-end;
-      padding: 0 1rem 1rem 0;
+      padding: 0 2rem 1rem 0;
       height: max-content;
     }
   }
