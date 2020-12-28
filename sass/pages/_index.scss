@@ -32,10 +32,20 @@
 
 .funct {
   margin: 4rem 2rem;
+  &-title {
+    @media (min-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
   &-item {
     @include list-item;
     padding: 3rem;
     margin: 2rem 0rem 2rem 1.5rem;
+    min-width: 32rem;
+    @media (min-width: $mobile-breakpoint) {
+      width: 32rem;
+      margin: 2rem auto;
+    }
     &__num {
       position: absolute;
       left: -1.5rem;
@@ -58,13 +68,29 @@
 
 .resto {
   padding: 4rem 2rem;
+  margin: auto;
   background-color: $bg-color-secondary;
+  max-width: $resto-max-width;
+  &-wrapper {
+    background-color: $bg-color-secondary;
+  }
+  &-list{
+    @media (min-width: $mobile-breakpoint) {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 1.5rem;
+      margin-top: 20px;
+    }
+  }
   &-card{
     @include shadow;
     overflow: hidden;
     position: relative;
     border-radius: 2rem;
     margin: 2rem 0;
+    @media (min-width: $mobile-breakpoint) {
+      margin: 0;
+    }
     &__img {
       @include img;
       height: 20rem;

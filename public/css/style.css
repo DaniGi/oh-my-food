@@ -199,6 +199,11 @@ footer li {
 .funct {
   margin: 4rem 2rem;
 }
+@media (min-width: 600px) {
+  .funct-title {
+    display: none;
+  }
+}
 .funct-item {
   box-shadow: 0px 4px 4px #e2e2e2;
   position: relative;
@@ -206,6 +211,13 @@ footer li {
   border-radius: 2rem;
   padding: 3rem;
   margin: 2rem 0rem 2rem 1.5rem;
+  min-width: 32rem;
+}
+@media (min-width: 600px) {
+  .funct-item {
+    width: 32rem;
+    margin: 2rem auto;
+  }
 }
 .funct-item__num {
   position: absolute;
@@ -227,7 +239,20 @@ footer li {
 
 .resto {
   padding: 4rem 2rem;
+  margin: auto;
   background-color: #f4f4f4;
+  max-width: 900px;
+}
+.resto-wrapper {
+  background-color: #f4f4f4;
+}
+@media (min-width: 600px) {
+  .resto-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1.5rem;
+    margin-top: 20px;
+  }
 }
 .resto-card {
   box-shadow: 0px 4px 4px #e2e2e2;
@@ -235,6 +260,11 @@ footer li {
   position: relative;
   border-radius: 2rem;
   margin: 2rem 0;
+}
+@media (min-width: 600px) {
+  .resto-card {
+    margin: 0;
+  }
 }
 .resto-card__img {
   object-fit: cover;
