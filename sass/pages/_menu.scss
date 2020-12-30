@@ -43,6 +43,7 @@
           width: 7rem;
           &__icon {
             transform: translate(-50%, -50%) rotate(720deg);
+            transition: transform $check-transition-dur;
           }
         }
       } 
@@ -64,8 +65,7 @@
       left: 50%;
       font-size: 2.5rem;
       color: white;
-      transform: translate(-50%, -50%) rotate(0deg);
-      transition: transform $check-transition-dur;
+      transform: translate(-50%, -50%);
     }
   }
   &-dish {

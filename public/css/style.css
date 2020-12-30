@@ -378,6 +378,7 @@ span {
 }
 .menu-section__item:hover .menu-check__icon {
   transform: translate(-50%, -50%) rotate(720deg);
+  transition: transform 400ms;
 }
 .menu-section__name {
   width: 5rem;
@@ -396,8 +397,7 @@ span {
   left: 50%;
   font-size: 2.5rem;
   color: white;
-  transform: translate(-50%, -50%) rotate(0deg);
-  transition: transform 400ms;
+  transform: translate(-50%, -50%);
 }
 .menu-dish {
   flex: 1;
