@@ -15,6 +15,10 @@ body {
   min-width: 340px;
 }
 
+html, body {
+  height: 100%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -73,6 +77,10 @@ span {
   font-size: 1.5rem;
 }
 
+.fs-4_5 {
+  font-size: 4.5rem;
+}
+
 .fw-400 {
   font-weight: 400;
 }
@@ -96,6 +104,44 @@ span {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes bounch {
+  0% {
+    animation-timing-function: cubic-bezier(0.53, 0.3, 0.81, 0.71);
+  }
+  25% {
+    transform: scaleX(0.7) scaleY(1.3) translateY(5rem);
+    animation-timing-function: cubic-bezier(0.28, 0.46, 0.69, 0.78);
+  }
+  50% {
+    transform: scaleX(1.3) scaleY(0.7) translateY(15.5rem);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1) translateY(0);
+  }
+}
+@keyframes trampoline {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  27% {
+    transform: scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(1.3) scaleY(0.7);
+  }
+  65% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 .btn {
@@ -197,7 +243,7 @@ span {
 
 .location {
   background-color: #e2e2e2;
-  box-shadow: inset 0 3px 1px rgba(182, 182, 182, 0.75);
+  box-shadow: inset 0 0.3rem 0.1rem rgba(182, 182, 182, 0.75);
   height: 5.5rem;
   display: flex;
   justify-content: center;
@@ -205,7 +251,7 @@ span {
 }
 .location__icon {
   margin: 0 2rem 0 -3rem;
-  padding-bottom: 3px;
+  padding-bottom: 0.3rem;
 }
 
 .explore {
@@ -278,7 +324,7 @@ span {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1.5rem;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 }
 .resto-card {
@@ -315,6 +361,86 @@ span {
 .resto .fa-heart {
   right: 3rem;
   bottom: 3rem;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(354deg, #9356dc 20%, #ff79da 100%);
+  animation: loader 300ms 3550ms forwards;
+}
+.loader-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16rem;
+}
+.loader .food {
+  display: inline-block;
+  width: fit-content;
+  animation: bounch 1000ms infinite;
+  animation-iteration-count: 4;
+}
+.loader .food--1 {
+  animation-delay: 250ms;
+}
+.loader .food--2 {
+  animation-delay: 300ms;
+}
+.loader .food--3 {
+  animation-delay: 350ms;
+}
+.loader .food--4 {
+  animation-delay: 400ms;
+}
+.loader .food--5 {
+  animation-delay: 450ms;
+}
+.loader .food--6 {
+  animation-delay: 500ms;
+}
+.loader .food--7 {
+  animation-delay: 550ms;
+}
+.loader .food--8 {
+  animation-delay: 600ms;
+}
+.loader .letter {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 6.8rem;
+  font-family: "Shrikhand", "Sans serif";
+  animation: trampoline 1000ms infinite;
+  animation-iteration-count: 4;
+  transform-origin: 50% 100%;
+}
+.loader .letter--1 {
+  animation-delay: 250ms;
+}
+.loader .letter--2 {
+  animation-delay: 300ms;
+}
+.loader .letter--3 {
+  animation-delay: 350ms;
+}
+.loader .letter--4 {
+  animation-delay: 400ms;
+}
+.loader .letter--5 {
+  animation-delay: 450ms;
+}
+.loader .letter--6 {
+  animation-delay: 500ms;
+}
+.loader .letter--7 {
+  animation-delay: 550ms;
+}
+.loader .letter--8 {
+  animation-delay: 600ms;
 }
 
 .menu__img {

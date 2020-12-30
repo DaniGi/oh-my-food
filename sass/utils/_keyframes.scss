@@ -7,3 +7,45 @@
     transform: translateY(0);
   }
 }
+
+@keyframes bounch {
+  0% {
+      animation-timing-function: cubic-bezier(.53,.3,.81,.71)
+  }
+  25% {
+      transform: scaleX($scale-1) scaleY($scale-2) translateY(5rem);
+      animation-timing-function: cubic-bezier(.28,.46,.69,.78);
+  }
+  50% {
+      transform: scaleX($scale-2) scaleY($scale-1) translateY(15.5rem);
+  }
+  
+  100% {
+      transform: scaleX(1) scaleY(1) translateY(0);
+  }
+}
+
+@keyframes trampoline {
+  0% {
+      transform: scaleX(1) scaleY(1);
+  }
+  27% {
+     transform: scaleX(1) scaleY(1);
+  }
+  50% {
+     transform: scaleX($scale-2) scaleY($scale-1);
+  }
+  65% {
+      transform: scaleX(1) scaleY(1);
+  }
+  100% {
+      transform: scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes loader{
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}

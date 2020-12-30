@@ -18,6 +18,15 @@ $num-items: 4;
 $item-anim-dur: 700ms;
 $item-anim-delay: 250ms;
 
+$scale-1: 0.7;
+$scale-2: 1.3;
+$num-col: 8;
+$loader-anim-dur: 1000ms;
+$loader-anim-initial-delay: 200ms;
+$loader-anim-delay: 50ms;
+$loader-anim-count: 4;
+$loader-visibility-delay: $loader-anim-initial-delay + $loader-anim-delay * ($num-col - 1) + ($loader-anim-dur * ($loader-anim-count - 1));
+
 $mobile-breakpoint: 600px;
 
 $resto-max-width: 900px;
