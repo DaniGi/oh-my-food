@@ -9,15 +9,13 @@
 }
 
 @keyframes bounch {
-  0% {
-    animation-timing-function: cubic-bezier(.53,.3,.81,.71);
-  }
   25% {
     transform: scaleX($scale-1) scaleY($scale-2) translateY(5rem);
     animation-timing-function: cubic-bezier(.28,.46,.69,.78);
   }
   50% {
     transform: scaleX($scale-2) scaleY($scale-1) translateY(15.5rem);
+    animation-timing-function: ease;
   }
   
   100% {

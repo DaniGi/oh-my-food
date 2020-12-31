@@ -128,7 +128,7 @@
   & .food {
     display: inline-block;
     width: fit-content;
-    animation: bounch $loader-anim-dur;
+    animation: bounch $loader-anim-dur cubic-bezier(.53,.3,.81,.71);
     animation-iteration-count: $loader-anim-count;
     @for $i from 1 through $num-col {
        &--#{$i} {
