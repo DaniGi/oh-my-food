@@ -122,19 +122,13 @@ span {
   }
 }
 @keyframes trampoline {
-  0% {
-    transform: scaleX(1) scaleY(1);
-  }
-  27% {
+  0%, 27% {
     transform: scaleX(1) scaleY(1);
   }
   50% {
     transform: scaleX(1.3) scaleY(0.7);
   }
-  65% {
-    transform: scaleX(1) scaleY(1);
-  }
-  100% {
+  65%, 100% {
     transform: scaleX(1) scaleY(1);
   }
 }
@@ -382,7 +376,7 @@ span {
 .loader .food {
   display: inline-block;
   width: fit-content;
-  animation: bounch 1000ms infinite;
+  animation: bounch 1000ms;
   animation-iteration-count: 4;
 }
 .loader .food--1 {
@@ -414,7 +408,7 @@ span {
   width: fit-content;
   margin-top: 6.8rem;
   font-family: "Shrikhand", "Sans serif";
-  animation: trampoline 1000ms infinite;
+  animation: trampoline 1000ms;
   animation-iteration-count: 4;
   transform-origin: 50% 100%;
 }
