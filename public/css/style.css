@@ -12,7 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  min-width: 340px;
+  min-width: 32rem;
 }
 
 html, body {
@@ -148,6 +148,9 @@ span {
   position: relative;
   z-index: 1;
 }
+.btn:hover {
+  cursor: pointer;
+}
 .btn:hover .btn__bg {
   opacity: 1;
 }
@@ -178,10 +181,11 @@ span {
   background: linear-gradient(354deg, #9356dc 20%, #ff79da 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity 200ms;
+  transition: opacity 450ms;
 }
 .fa-heart.fas:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .header {
@@ -253,12 +257,12 @@ span {
   flex-direction: column;
   align-items: center;
 }
-.explore > h1 {
+.explore__title {
   width: 75%;
   line-height: 1;
   text-align: center;
 }
-.explore > p {
+.explore__subtitle {
   width: 85%;
   text-align: center;
   padding: 1rem 0 3rem 0;
@@ -277,9 +281,10 @@ span {
   position: relative;
   background-color: #f4f4f4;
   border-radius: 2rem;
+  display: flex;
+  align-items: center;
   padding: 3rem;
   margin: 2rem 0rem 2rem 1.5rem;
-  min-width: 32rem;
 }
 @media (min-width: 600px) {
   .funct-item {
@@ -300,6 +305,10 @@ span {
 .funct-item__icon {
   color: #898989;
   margin: 0 2rem 0 1rem;
+  display: block;
+}
+.funct-item__description {
+  display: block;
 }
 
 .resto {
@@ -331,6 +340,9 @@ span {
     margin: 0;
   }
 }
+.resto-card:hover {
+  cursor: pointer;
+}
 .resto-card__img {
   object-fit: cover;
   object-position: bottom;
@@ -350,7 +362,7 @@ span {
   color: #1b6150;
   border-radius: 0.5rem;
 }
-.resto .fa-heart {
+.resto-card__icon {
   right: 3rem;
   bottom: 3rem;
 }
@@ -359,7 +371,7 @@ span {
   display: flex;
   justify-content: center;
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: linear-gradient(354deg, #9356dc 20%, #ff79da 100%);
@@ -490,6 +502,9 @@ span {
 }
 .menu-section__item--4 {
   animation-delay: 750ms;
+}
+.menu-section__item:hover {
+  cursor: pointer;
 }
 .menu-section__item:hover .menu-check {
   width: 7rem;
