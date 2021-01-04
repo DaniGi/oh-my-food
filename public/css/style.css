@@ -77,6 +77,10 @@ span {
   font-size: 1.5rem;
 }
 
+.fs-3 {
+  font-size: 3rem;
+}
+
 .fs-4_5 {
   font-size: 4.5rem;
 }
@@ -170,7 +174,6 @@ span {
 
 .fa-heart {
   position: absolute;
-  font-size: 3rem;
 }
 .fa-heart.far {
   color: #afafaf;
@@ -472,10 +475,21 @@ span {
 }
 .menu-list__title {
   font-family: "Shrikhand", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .menu-list__icon {
-  top: 4.5rem;
+  position: relative;
   margin-left: 1rem;
+  margin-right: 5%;
+}
+.menu-list__heart--1 {
+  position: initial;
+}
+.menu-list__heart--2 {
+  top: 0;
+  left: 0;
 }
 .menu-section {
   margin-top: 3rem;

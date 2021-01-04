@@ -18,10 +18,23 @@
     }
     &__title {
       font-family: 'Shrikhand', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     &__icon {
-      top: 4.5rem;
-      margin-left: 1rem; 
+      position: relative;
+      margin-left: 1rem;
+      margin-right: 5%;
+    }
+    &__heart {
+      &--1 {
+        position: initial;
+      }
+      &--2 {
+        top: 0;
+        left: 0; 
+      }
     }
   }
   &-section {
