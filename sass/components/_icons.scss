@@ -10,7 +10,7 @@
     background: gradient-generator();
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: opacity 200ms;
+    transition: opacity 450ms;
     &:hover {
       opacity: 1;
       cursor: pointer;
