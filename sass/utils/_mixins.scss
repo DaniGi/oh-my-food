@@ -59,8 +59,8 @@
   z-index: 1;
   opacity: 0;
   background: gradient-generator();
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   transition: opacity 450ms;
   &:hover {
     opacity: 1;

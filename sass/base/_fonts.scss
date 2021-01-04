@@ -1,12 +1,12 @@
 $fontSizes: (
-    "2_8": 2.8rem,
-    "2": 2rem,
-    "1_9": 1.9rem,
-    "1_8": 1.8rem,
-    "1_7": 1.7rem,
-    "1_5": 1.5rem,
-    "3": 3rem,
-    "4_5": 4.5rem,
+  "4_5": 4.5rem,
+  "3": 3rem,
+  "2_8": 2.8rem,
+  "2": 2rem,
+  "1_9": 1.9rem,
+  "1_8": 1.8rem,
+  "1_7": 1.7rem,
+  "1_5": 1.5rem,
 );
 
 @each $fontSize, $size in $fontSizes {
