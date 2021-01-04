@@ -39,6 +39,7 @@
           }
       }
       &:hover {
+        cursor: pointer;
         & .menu-check {
           width: 7rem;
           &__icon {

@@ -87,6 +87,9 @@
     @media (min-width: $mobile-breakpoint) {
       margin: 0;
     }
+    &:hover {
+      cursor: pointer;
+    }
     &__img {
       @include img;
       height: 20rem;

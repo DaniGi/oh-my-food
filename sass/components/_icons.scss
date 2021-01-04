@@ -13,6 +13,7 @@
     transition: opacity 200ms;
     &:hover {
       opacity: 1;
+      cursor: pointer;
     }
   }
 }
