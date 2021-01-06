@@ -23,8 +23,8 @@
     @include shadow($bg-color-dark);
     position: absolute;
     top: 0;
+    bottom:0;
     right: 0;
-    bottom: 0;
     left: 0;
     background: gradient-generator(3, 3);
     opacity: 0;
@@ -61,7 +61,7 @@
   background: gradient-generator();
   -webkit-background-clip: text;
   color: transparent;
-  transition: opacity 450ms;
+  transition: opacity 400ms ease-in;
   &:hover {
     opacity: 1;
     cursor: pointer;
